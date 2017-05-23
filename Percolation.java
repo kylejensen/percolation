@@ -85,11 +85,13 @@ public class Percolation
         return wqu.connected(top, bottom);
     }
 
-    private int getQFIndex(int row, int col) {
+    private int getQFIndex(int row, int col)
+    {
         return size * (row - 1) + col;
     }
     
-    private void validate (int x) {
+    private void validate (int x)
+    {
         if (x <= 0 || x > size) {
             throw new IndexOutOfBoundsException("index out of bounds");
         }
